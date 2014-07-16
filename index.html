@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Developing Data Products Course Project - Slidify</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Developing Data Products Course Project - Slidify">
+  <meta name="author" content="cafefargo">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>Developing Data Products Course Project - Slidify</h1>
+    <h2></h2>
+    <p>cafefargo<br/></p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>Calculate Combinations of People to ride in your new car</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>You are thinking about buying a new car.  Since you are such a popular person and adored by all, you realize when you drive the new car home, the whole neighborhood will be in your driveway, gathering around your car to check out your new ride.  Before you know it, everyone will want a ride in your new car.  Also, since the people in your neighborhood are highly sociable, you know each neighbor will want to ride with all the other neighbors (if physcially possible), even if that means riding in your new car more than once.  You have not decided yet what size car you are going to get.  Will you get the little sports car with room for one passenger (not including the driver)?  Will you just say the heck with it and buy a school bus so you only have give your neighbors one ride?  Will you get something in between?  This application will allow you to specify how many people want to ride in your new car, how many passenger seats your car has, and then calculates the number of possible combinations of passengers.  This determines how many separate rides you have to give to your neighbors to satisfy all the combinations, where order does not matter.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-2" style="background:;">
+  <hgroup>
+    <h2>How it works</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Enter total people who want to ride in the car.</p>
+
+<p>Enter the number of passenger seats in the car (not including the driver&#39;s seat).  Then, click Submit.</p>
+
+<p>Note: If a number entered is not an integer, it will be rounded (i.e. 1.6 becomes 2, 1.4 becomes 1).
+Negative signs are ignored.</p>
+
+<p>It will return the number of possible combinations (where order does not matter) for all the passengers, given the number of people who want a ride and the number of passenger seats.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-3" style="background:;">
+  <hgroup>
+    <h2>Example</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Assume 5 people want a ride.</p>
+
+<p>Assume your car has 3 passenger seats (not including the driver).</p>
+
+<pre><code class="r">choose(5,3)
+</code></pre>
+
+<pre><code>## [1] 10
+</code></pre>
+
+<p>We see there are 10 combinations that have been calculated and displayed, using an R expression, where order does not matter.  Therefore, you need to give 10 rides to satisfy all the possible combinations.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-4" style="background:;">
+  <hgroup>
+    <h2>Key reasons to get this application</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>It&#39;s free.</p>
+
+<p>It does not track you.</p>
+
+<p>Oh yeah, did I mention it&#39;s free?</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='Calculate Combinations of People to ride in your new car'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='How it works'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='Example'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Key reasons to get this application'>
+         4
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
